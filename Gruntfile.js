@@ -7,7 +7,8 @@ module.exports = function(grunt) {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
             build: {
-                src: 'client/app.js',
+                src: 'client/scripts/app.js',
+                //added scripts - now create scripts folder in assets
                 dest: 'server/public/assets/scripts/app.min.js'
             }
         },
