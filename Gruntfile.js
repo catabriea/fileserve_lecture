@@ -13,15 +13,23 @@ module.exports = function(grunt) {
             }
         },
         copy: {
-            main: {
+            bootstrap: {
                 expand: true,
                 cwd: "node_modules/",
                 src: [
-                    "angular/angular.min.js",
-                    "angular/angular.min.js.map",
-                    "angular/angular-csp.css"
+                    "bootstrap/dist/css/bootstrap.min.css",
+                    //changed the ^ line of code to access css from node modules root in bootstrap
                 ],
-                "dest": "server/public/vendor/"
+                "dest": "server/public/vendors/"
+            },
+            jquery: {
+                expand: true,
+                cwd: "node_modules/",
+                src: [
+                    "jquery/dist/jquery.min.js",
+                    //changed the ^ line of code to access css from node modules root in bootstrap
+                ],
+                "dest": "server/public/vendors/"
             }
         }
     });
