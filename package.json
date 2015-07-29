@@ -1,0 +1,15 @@
+{
+  "name": "fileserve_gamma_lecture",
+  "version": "1.0.0",
+  "description": "Fileserve lecture",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Catabriea White",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
